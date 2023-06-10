@@ -1,5 +1,5 @@
 body{
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -19,9 +19,11 @@ body{
 .p-1{
     padding: 1rem;
 }
-
+.p-05{
+    padding: 0.5rem;
+}
 .content{
-    padding: 1rem 8rem;
+    padding: 1rem 7rem;
 }
 
 .flex {
@@ -58,13 +60,16 @@ table {
   th {
     background-color: #acb0ee;
   }
+  td{
+    font-weight: 500;
+  }
 
 .verde{
     background-color: #81b441;
 }
 
 .btn-add{
-    color: white;
+    
     display: flex;
     flex-direction: flex;
     border: none;
@@ -80,5 +85,88 @@ table {
 .btn-add  h4{
     padding: 0rem !important;
     margin: 0.38rem;
+    color: white !important;
+}
+
+.white{
+    background-color: white;
+}
+
+.div-add-cont{
+    height: 55px;
+    width: 100%;
+    box-shadow: 0 1px 8px rgba(0,0,0,.1);
+    margin-bottom: 1rem;
+    border-radius: 8px;
     
+}
+
+#dialogo div{
+    background: #3f3f3f;
+    width: 32%;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+#dialogo{
+    gap: 0.2rem;
+    padding-left: 1rem;
+    
+}
+#dialogo input{
+    border: none;
+    padding: 0.5rem;
+    background: #3f3f3f;
+    border-radius: 15px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+ h2, h3, h4, h5, h6{
+    color: #303030;
+    font-weight: 600;
+}
+
+h1{
+    font-weight: 700;
+    color: #303030;
+}
+
+.w-3{
+    width: 16%;
+}
+
+.w-9{
+    width: 80%;
+}
+
+.black{
+    background-color: #282828;
+}
+
+.justify-content-around{
+    justify-content: space-evenly;
+}
+
+.icone{
+    width: 25px !important;
+}
+
+.m-1{
+    margin: 0.5rem;
+}
+
+.p-025{
+    padding: 0.25rem;
+}
+
+#salvarContato{
+    border: none;
+    background-color: #282828;
+    border-radius: 8px;
+    cursor: pointer;
 }
