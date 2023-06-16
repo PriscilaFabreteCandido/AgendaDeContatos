@@ -1,15 +1,6 @@
 var agendaList = [];
 var isEdit = false;
 var row = null;
-function exibirDialogo() {
-    var dialogo = document.getElementById('dialogo');
-    dialogo.style.display = 'block';
-}
-
-function fecharDialogo() {
-    var dialogo = document.getElementById('dialogo');
-    dialogo.style.display = 'none';
-}
 
 function limparCampos() {
     document.getElementById('nome').value = '';
@@ -30,7 +21,6 @@ function createOrEditAgendaCont(type) {
   
 }
 function editAgendaCont(nome, email, telefone){
-    console.log('veio aqui')
    if(row != null && isEdit){
         this.row.cells[0].textContent = nome;
         this.row.cells[1].textContent = telefone;
@@ -72,8 +62,7 @@ function createAgendaCont(nome, email, telefone) {
     }
   
     this.agendaList.push({ id: this.agendaList.length + 1, nome: nome, email: email, telefone: telefone });
-    console.log('É para criar:', this.agendaList);
-  
+ 
     var table = document.getElementById('agendaTable');
     var newRow = table.insertRow();
   
